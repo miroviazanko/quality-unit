@@ -1,0 +1,20 @@
+@import '../../../Sass/custom.scss';
+
+.laButton {
+    background: $la-gradient;
+    padding: 1rem 1.5rem;
+    border-radius: 6px;
+    max-width: max-content;
+    min-width: 185px;
+    text-align: center;
+    & a {
+        color: $white;
+        font: {
+            size: 14px;
+            weight: 700;
+        }
+    }
+}
+.laButton:hover {
+    color: $gray-hover;
+}

@@ -1,0 +1,21 @@
+.image {
+    max-width: 75%;
+}
+.messages {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media ( max-width: 768px ) {
+    .messages {
+        left: .5rem;
+    }
+}
+
+@media ( max-width: 576px ) {
+    .image {
+        max-width: 85%;
+    }
+}

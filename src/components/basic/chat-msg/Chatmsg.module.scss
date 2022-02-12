@@ -1,0 +1,42 @@
+.para {
+    position: relative;
+    padding: .5rem 2.5rem .5rem 1.5rem;
+    box-shadow: 9px 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    font: {
+        family: 'Lato';
+        weight: 400;
+        size: 20px;
+    }
+    width: 315px;
+    line-height: 28px;
+    border-radius: 24px;
+    & p {
+        margin: 0;
+    }
+}
+
+.vector {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    width: 22px;
+}
+
+.received {
+    border-bottom-left-radius: 6px;
+}
+.sent {
+    border-bottom-right-radius: 6px;
+    margin-left: 4rem;
+}
+
+@media ( max-width: 768px ) {
+    .para {
+        width: 250px;
+        line-height: 18px;
+        font: {
+            size: 14px;
+        }
+    }
+}

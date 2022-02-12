@@ -1,0 +1,85 @@
+@import "./Sass/custom.scss";
+
+$theme-colors: (
+    "main-color": $main-color,
+    "laorange": $la-orange,
+    "lagrey-bg": $la-grey-bg,
+    "lagrey-color": $la-grey-color,
+    "lagrey-serv": $la-grey-serv
+);
+
+@import "~bootstrap/scss/bootstrap";
+
+
+html {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	scroll-behavior: smooth;
+	//user-select: none; /* supported by Chrome and Opera */
+   //-webkit-user-select: none; /* Safari */
+   //-khtml-user-select: none; /* Konqueror HTML */
+   //-moz-user-select: none; /* Firefox */
+   //-ms-user-select: none; /* Internet Explorer/Edge */
+}
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+body {
+	margin: 0 auto;
+  	overflow-x: hidden;
+	font-family: 'Poppins', sans-serif;
+}
+h1 {
+	font: {
+		size: 55px;
+		weight: 700;
+	}
+	line-height: 66px;
+}
+h2 {
+	font: {
+		size: 40px;
+		weight: 700;
+	}
+	line-height: 55px;
+}
+h4 {
+	font: {
+		size: 26px;
+	}
+	line-height: 37px;
+}
+h5 {
+	font: {
+		size: 24px;
+		weight: 700;
+	}
+	line-height: 24px;
+}
+h6 {
+	font: {
+		size: 14px;
+		weight: 700;
+	}
+	line-height: 24px;
+}
+a {
+	text-decoration: none;
+}
+p {
+	font-size: 16px;
+	line-height: 26px;
+}
+.price-text {
+	font: {
+		size: 20px;
+		weight: 700;
+	}
+	line-height: 24px;
+}

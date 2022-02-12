@@ -1,0 +1,38 @@
+@import '../../../Sass/custom.scss';
+
+.playBtnWrapper {
+    display: inline-flex;
+    width: 48px;
+    height: 48px;
+    margin: 0 1.5rem;
+    & .playBtn, .stLayout, .ndLayout {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        background: $la-gradient;
+        border-radius: 50%;
+    }
+
+    & .playBtn {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 15;       
+    }
+    & .stLayout {
+        width: 40px;
+        height: 40px;
+        opacity: .4;
+        z-index: 10;
+    }
+    & .ndLayout {
+        width: 48px;
+        height: 48px;
+        opacity: .2;
+        z-index: 5;
+    }
+}

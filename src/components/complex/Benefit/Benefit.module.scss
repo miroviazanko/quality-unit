@@ -1,0 +1,35 @@
+@import "../../../Sass/custom.scss";
+
+.benefitWrapper {
+    border-radius: 16px;
+    box-shadow: 0px 1px 20px rgba(250, 149, 49, 0.15);
+    overflow: hidden;
+    margin: 1rem 0;
+    & .amountCol {
+        position: relative;
+        background: url('../../../assets/Element.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 1rem;
+        & h1 {
+            position: absolute;
+            z-index: 10;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            height: max-content;
+            width: fit-content;
+            background: $la-gradient;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size:50px;
+        }
+    }
+    & .descCol {
+        background-color: $white;
+        padding: 1rem;
+
+    }
+}

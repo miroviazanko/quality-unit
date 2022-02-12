@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+//import useSelector hook from redux
+import { useSelector, useDispatch } from 'react-redux';
+
+import Info from './components/complex/Info/Info';
+import Pricing from './components/complex/Pricing/Pricing';
+import Benefits from './components/complex/Benefits/Benefits';
+
+
+export default function App() {
+
+
+
+	return (
+		<div className="App">
+			
+
+			<Info />
+			
+			<Pricing />
+
+			<Benefits />
+			
+		</div>
+	);
 }
-
-export default App;
